@@ -1,0 +1,138 @@
+DOM Exercises
+Given the following HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">Third</li>
+        </ol>
+    </section>
+    <div class="footer"> hello
+    </div>
+    <script>
+        var newDiv = document.getElementsByTagName("div")[1]
+        newDiv.classList.add("main")
+        console.log(newDiv)
+        var removeDiv = document.getElementsByTagName("div")[1]
+        newDiv.classList.remove("main")
+        console.log(newDiv)
+
+        var newLi = document.createElement("li")
+        newLi.innerText = "Four"
+        var appendNewLi = document.querySelector("ul");
+          appendNewLi.appendChild(newLi);
+
+
+          var newOls = document.getElementsByTagName("ol")
+          for(var i = 0; i < newOls.length; i++)
+          newOls[i].style.backgroundColor= "green"
+
+
+        var deleteDiv = document.querySelector(".footer");
+        var body = document.querySelector("body");
+        body.removeChild(deleteDiv)
+     
+    //     var section = document.getElementById("container");
+    //     section.innerHTML = "Hello"
+    //     console.log(section)
+    //     var section = document.querySelector("#container");
+    //    var second = document.getElementsByClassName("second")
+    //     console.log(second)
+
+    //     var third = document.getElementsByClassName("third")[1]
+    //     console.log(third)
+    
+    </script>
+</body>
+</html>
+
+
+
+
+Write the code necessary to do the following:
+
+
+Select the section with an id of container without using querySelector.
+Ans||
+var section = document.getElementById("container");
+
+
+Select the section with an id of container using querySelector.
+Ans||   
+var section = document.querySelector("#container");
+
+Select all of the list items with a class of "second".
+Ans|| 
+var second = document.getElementsByClassName("second")
+
+Select a list item with a class of third, but only the list item inside of the ol tag.
+Ans||
+var third = document.getElementsByClassName("third")[1]
+    console.log(third)
+
+
+Give the section with an id of container the text "Hello!".
+Ans||
+var section = document.getElementById("container");
+section.innerHTML = "Hello"
+console.log(section)
+
+
+Add the class main to the div with a class of footer.
+Ans||
+var newDiv = document.getElementsByTagName("div")[1]
+  newDiv.classList.add("main")
+  console.log(newDiv)
+
+Remove the class main on the div with a class of footer.\
+Ans||
+var removeDiv = document.getElementsByTagName("div")[1]
+newDiv.classList.remove("main")
+console.log(newDiv)
+
+Create a new li element.
+Ans||
+var newLi = document.createElement("li")
+  console.log(newLi)
+
+Give the li the text "four".
+Ans||
+
+var newLi = document.createElement("li")
+newLi.innerText = "Four"
+console.log(newLi)
+
+
+Append the li to the ul element.
+Ans||
+var appendNewLi = document.querySelector("ul");
+  appendNewLi.appendChild(newLi);
+
+
+Loop over all of the lis inside the ol tag and give them a background color of "green".
+Ans|||
+
+var newOls = document.getElementsByTagName("ol")
+for(var i = 0; i < newOls.length; i++)
+newOls[i].style.backgroundColor= "green"
+
+
+Remove the div with a class of footer.
+Ans||
+var deleteDiv = document.querySelector(".footer");
+  var body = document.querySelector("body");
+      body.removeChild(deleteDiv)

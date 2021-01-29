@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery.css" class="css">
+    <title>My ToDo App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+                <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+                    <h2>My ToDo App</h1>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="form-group col-md-9">
+                                <input type="text" placeholder="New ToDo" class="form-control" id="addTask">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <button class="btn btn-primary" onclick="toDo.addTaskClick()">Add</button>
+                            </div>
+                             <div class="col-md-1"></div> 
+                        </div>   
+                        <ul class="list-group" id="taskList">
+                            <li class="list-group-item checkbox">
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1 checkbok">
+                                        <label><input type="checkbox" value="" class="" checked id=""></label>
+                                    </div>
+                                    <div class="col-md-10 col-xs-10 col-lg-10 col-sm-10">
+                                        First Task
+                                    </div>
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item checkbox">
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1 checkbox">
+                                        <label><input 
+                                            type="checkbox"
+                                            class="" checked>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-10 col-xs-10 col-lg-10 col-sm-10">
+                                        Second Task
+                                    </div>
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item checkbox">
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1 checkbok">
+                                        <label><input type="checkbox" value="" class="" checked id=""></label>
+                                    </div>
+                                    <div class="col-md-10 col-xs-10 col-lg-10 col-sm-10">
+                                        Third Task
+                                    </div>
+                                    <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1">
+                                        <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+        </div>
+    </div>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

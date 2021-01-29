@@ -1,0 +1,63 @@
+.container {
+        width: 550px;
+        background-color: rgb(143, 92, 92);
+        margin: 30px auto;
+        border-radius: 10px;
+        padding: 10px;
+    }  
+#clock{
+    width:385px;
+    height:385px;
+   /* background-color: blueviolet; */
+   background-image: url(images.jpg);
+   background-repeat: round;
+   border:10px solid black;
+   border-radius: 200px;
+   margin: 50px auto;
+   position: relative;
+}
+
+#seconds{
+    width:5px;
+    height: 170px;
+    background-color:grey;
+    margin-left:49%;
+    margin-top:20px;
+    position:absolute;
+    animation: rotate 60s infinite steps(60);
+}
+
+#minutes{
+    width:6px;
+    height:150px;
+    background-color: rgb(44, 44, 44);
+    margin-left:49%;
+    margin-top: 40px;
+    position:absolute;
+    animation: rotate 3600s infinite steps(60);
+
+}
+
+#hours{
+    width:8px;
+    height:115px;
+    background-color: rgb(53, 48, 48);
+    margin-left: 49%;
+    margin-top:80px;
+    position: absolute;
+    animation:43200s infinite linear;
+
+}
+
+@keyframes rotate {
+    0%{
+        transform:rotate(0);
+        transform-origin:center bottom;
+        }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: center bottom;
+    }
+}
+
+

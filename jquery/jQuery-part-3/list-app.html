@@ -1,0 +1,75 @@
+<!-- Part 3
+Build a list page where users can add and rate examples from a category (e.g. movies, albums, or sports). 
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <title>My List App</title>
+ </head>
+ <body>
+     <div class="container">
+         <div class="display-4 text-center mb-3 font-weight-bold">My Favorite Movies</div>
+        <form class="form-inline mb-3">
+            <label class="mr-2 font-weight-bold">Title</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Movie Title">
+          
+            <label class="mx-2 mt-0 font-weight-bold">Rating</label>
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend input-group input-group-sm mb-3">
+              </div>
+              <input type="number" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Rate movie from 0 to 10">
+            </div>
+            <button type="submit" class="btn btn-light mb-2 ml-2">Add Movie</button>
+          </form>
+
+
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr scope="row">
+                  <th  data-column="movieTitle"  class= "text-center"  style="width:70%">Title
+                    <span class="sort-btn" id="sort-title">
+                        <i class="fas fa-sort"></i>
+                    </span>
+                    </th>
+                  <th  data-column="movieTitle"  class= "text-center"  style="width:15%">Rating
+                    <span class="sort-btn" id="sort-rating">
+                        <i class="fas fa-sort"></i>
+                    </span>
+                    </th>
+                  <th class="text-center"  style="width:15%">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-center">Thor</th>
+                <td class="text-center">1</td>
+                <td><button class="btn btn-danger btn-block btn-sm">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">GOT</th>
+                <td class="text-center">2</td>
+                <td><button class="btn btn-danger btn-block btn-sm">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">Money Heist</th>
+                <td class="text-center">3</td>
+                <td><button class="btn btn-danger btn-block btn-sm">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+     </div>
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+ </body>
+ </html>

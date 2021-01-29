@@ -1,0 +1,120 @@
+EVENTS Section
+
+Given the following HTML, create a script.js file to complete the first two parts.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Exercise</title>
+</head>
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  var bodyTag = document.querySelector("#change_heading")
+  bodyTag.innerHTML = "Hello World"
+})
+
+window.addEventListener("load", function(){
+var bodyTag = document.querySelector("#change_heading")
+  bodyTag.innerHTML = "Hello World"
+})
+
+
+
+</script> -->
+<body>
+      <h1 id="change_heading">Change Me!</h1>
+      SELECTED COLOR
+      <span class="selected">None!</span>
+      <section>
+          <div class="brown"></div>
+          <div class="green"></div>
+          <div class="blue"></div>
+          <div class="yellow"></div>
+      </section>
+        <h2>Race!</h2>
+        <button>Start the race!</button>
+          <br>
+        <div class="car1"></div>
+          <br>
+        <div class="car2"></div>
+    
+<script>
+var section = document.querySelector(".section") 
+
+
+var selected = document.querySelector(".selected") //using the class name.
+document.addEventListener("mouseover", function(event){
+selected.innerText =  event.target.className
+})
+
+// var selected = document.querySelector("span"); //using the parent element
+// selected.addEventListener("mouseover", function(event){
+// console.log("I just clicked", event.target.className)
+
+// })
+
+var newDiv = document.createElement("div");
+newDiv.classList = "purple"
+newDiv.style.backgroundColor = "purple"
+
+var sectionTag = document.querySelector("section");
+sectionTag.appendChild(newDiv)
+    </script>
+</body>
+</html>
+
+
+Part 1
+Add the necessary code to wait for the DOM to load to make sure that anything you manipulate in the DOM has loaded. You can do this either using window.onload or adding an event listener for DOMContentLoaded.
+
+Ans||
+document.addEventListener("DOMContentLoaded", function(){
+
+  var bodyTag = document.querySelector("#change_heading")
+  bodyTag.innerHTML = "Hello World"
+})
+
+OR||
+
+window.addEventListener("load", function(){
+var bodyTag = document.querySelector("#change_heading")
+  bodyTag.innerHTML = "Hello World"
+})
+
+
+
+Replace the text "Change me" with "Hello World!".
+Ans||
+
+var bodyTag = document.querySelector("#change_heading")
+  bodyTag.innerHTML = "Hello World"
+
+
+When a user hovers over one of the colored boxes change the text to display the color that is being hovered over.
+Ans||
+var section = document.querySelector(".section")
+
+document.addEventListener("mouseover", function(event){
+var selected = document.querySelector(".selected")
+  selected.innerText =  event.target.className
+})
+
+
+Create a new div element.
+Ans||
+var newDiv = document.createElement("div");
+console.log("newDiv")
+
+
+Give your new div a class of purple and style it so that it has a background color of purple.
+Ans||
+newDiv.classList = "purple"
+newDiv.style.backgroundColor = "purple"
+
+
+Append your new div to the page to the section tag.
+Ans||
+var sectionTag = document.querySelector("section");
+sectionTag.appendChild(newDiv)
+

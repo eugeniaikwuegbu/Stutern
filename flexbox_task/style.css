@@ -1,0 +1,46 @@
+.wrapper{
+    border:3px solid black;
+    width:500px;
+    height: 500px;
+}
+.header{
+    margin-left:2px;
+}
+
+.parent {
+    border-top:3px solid black;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    margin:5px 10px 3px;
+}
+
+.blueviolet {
+    height:70px;
+    border:3px solid black;
+    background-color: rgb(112, 77, 145);
+    margin: 10px 5px 10px 5px;
+}
+
+.pink{
+    border: 3px solid black;
+    background-color: rgb(185, 99, 114);
+    height:370px;
+    width:150px;
+}
+
+.green{
+    border:3px solid black;
+    background-color: rgb(113, 160, 113);
+    height:370px;
+    width:150px;
+
+}
+
+.yellow{
+    border:3px solid black;
+    background-color:rgb(153, 153, 19);
+    height:370px;
+    width:150px;
+}
